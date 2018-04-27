@@ -1,16 +1,8 @@
-jekyll-theme-solid
-=================
+Demo: [http://webjeda.com/vyaasa](http://webjeda.com/vyaasa)
 
-A simple and clean jekyll theme without javascript.
+## Installation
+* Fork the repository
+* Go to settings and set Github Pages source as master.
+* Your new site should be ready.
 
-Online Demo: <http://mazhuang.org/jekyll-theme-solid>
-
-## Screenshots
-
-* Home page
-
-  ![home page](./images/screenshots/home.png)
-
-* Post page
-
-  ![post page](./images/screenshots/posts.png)
+For more themes visit - [https://jekyll-themes.com](https://jekyll-themes.com)

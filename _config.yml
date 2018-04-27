@@ -1,52 +1,39 @@
-# ---------------- #
-#   Main Configs   #
-# ---------------- #
-baseurl: 
-url: http://mazhuang.org/jekyll-theme-solid
-date_format: "ordinal"
-title: jekyll-theme-solid
-author: Zhuang Ma 
+#Created by webjeda - http://webjeda.com
 
-# ---------------- #
-#   RSS / Email    #
-# ---------------- #
-subscribe_rss: /feed.xml
-email:
+# Site settings
+title: "I'm Vyaasa"
+title-font-size: '4em' # a provision to adjust the size of your title. If it is too long then do resize to a smaller value. By default it will be 4em.
 
-# ---------------- #
-#      Jekyll      #
-# ---------------- #
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Vyaasa is a minimal Jekyll theme meant for writers. Long text posts will look good with this layout. This is a free theme and can be used for all kinds of Jekyll blogs.
+baseurl: "/vyaasa" # the subpath of your site, e.g. /blog
+url: "http://webjeda.com" # the base hostname & protocol for your site
+
+permalink: :title/
+
+# Build settings
 markdown: kramdown
-kramdown:
-    input: GFM
-paginate: 9
-permalink: /:year/:month/:day/:title/
-gems:
-    - jekyll-paginate
-    - jekyll-sitemap
-    - jekyll-feed
-    - jemoji
-collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/
+highlight: rouge
+paginate: 5
+paginate_path: /page:num/
 
-# ---------------- #
-#      Comments    #
-# ---------------- #
-# support provider: disqus, gitment
-comments_provider: gitment
-# !!!重要!!! 请修改下面这些信息为你自己申请的
-# !!!Important!!! Please modify infos below to yours
-# https://disqus.com
-disqus:
-    username: mzlogin
-# https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner: mzlogin
-    repo: jekyll-theme-solid
-    oauth:
-        client_id: d2e1cbbd298958076462
-        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
-# 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : false
+
+# Tracker
+analytics: UA-83979019-1
+
+# Comments
+disqus-shortname: webjeda-demo
+
+# Contact form
+# Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
+api-token:   
+
+#CSS
+sass:
+  style: compressed
+
+
+include: [_pages]
+
+gems: [jekyll-paginate, jekyll-seo-tag]
